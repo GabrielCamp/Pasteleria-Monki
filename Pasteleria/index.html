@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Monki</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            font-size: x-large;
+        }
+
+        header {
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: #D4AF37;
+        }
+
+        ul {
+            color: white;
+        }
+
+        h3 {
+            color: #D4AF37;
+        }
+
+        h4 {
+            color: #D4AF37;
+        }
+
+        label {
+            color: white;
+        }
+
+        td {
+            color: white;
+        }
+
+        th {
+            color: #D4AF37;
+        }
+
+        img {
+            text-align: left;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Enlace hacia el dashboard del pastelero-->
+    <ul>
+        <li><a href="dashboard.html">Administrador</a></li>
+    </ul>
+    <header>
+        <img src="Monki.png" alt="LogoMonki">
+        <h1>Pasteleria Monki</h1>
+        <h2>Bienvenidos a la mejor pasteleria</h2> 
+    </header>
+    <br>
+    <!--Seccion de los sabores y los precio de los pasteles-->
+    <section>
+        <ul>
+            <h3>Sabores</h3>
+            <li>Pastel de chocolate</li>
+            <img src="https://cocinalocal.cl/wp-content/uploads/2021/08/pastel-de-chocolate.jpg" alt="Pastel de chocolate" width="300px" height="300px">
+            <br>
+            <li>Pastel de vainilla</li>
+            <img src="https://i0.wp.com/www.pastelesdlulu.com/wp-content/uploads/2020/11/20201101_19170647.jpg?resize=940%2C1248&ssl=1" alt="Pastel de vainilla" width="300px" height="300px">
+            <br>
+            <li>Pastel napolitano</li>
+            <img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2020/07/pastel-napolitano.jpg" alt="Pastel de napolitano" width="300px" height="200px">
+            <br>
+            <li>Pastel de fresa</li>
+            <img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2016/01/pastel-de-malteada-de-fresa.jpg" alt="Pastel de fresa" width="300px" height="200px">
+            <br>
+            <li>Pastel tres leches</li>
+            <img src="https://www.laylita.com/recetas/wp-content/uploads/2018/09/1-Receta-del-tres-leches.jpg" alt="Pastel de tres leches" width="300px" height="400px">
+        </ul> 
+        <br>
+        <ul>
+            <h3>Precios</h3>
+            <li>Individual --------- $70.00*</li>
+            <br>
+            <li>6 personas --------- $230.00*</li>
+            <br>
+            <li>15 personas -------- $440.00*</li>
+            <br>
+            <li>25 personas -------- $650.00*</li>
+        </ul>
+    </section>
+    <br>
+    <!--Seccion de los adornos para los pasteles-->
+    <section>
+        <ul>
+            <h3>Adornos</h3>
+            <li>Chispas de chocolate 100gr ------- $2.00*</li>
+            <img src="https://img.freepik.com/fotos-premium/muchas-chispas-chocolate-rellenas-fondo-ilustracion-3d-chispas-chocolate-marron_394271-709.jpg" alt="chispas chocolate" width="200px" height="200px">
+            <br>
+            <li>Gomitas 100gr ---------------- $1.50*</li>
+            <img src="https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F03%2Fnoticias%2F06%2Fgomitas.jpg?auto=format%2Ccompress&fit=max&format=webp&w=400&dpr=2.6" alt="Gomitas" width="200px" height="200px">
+            <br>
+            <li>Fruta 100gr -------------------  $1.50*</li>
+            <img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2018/07/Frutas-y-verduras-de-temporada.jpg" alt="Fruta" width="200px" height="200px">
+            <br>
+            <li>Helado 800gr ----------------- $9.00*</li>
+            <img src="https://mejorconsalud.as.com/wp-content/uploads/2018/02/helado-768x480.jpg" alt="Helado" width="200px" height="200px">
+            <br>
+            <li>Galletas 91gr ----------------- $12.20*</li>
+            <img src="https://elbauldulce.com/wp-content/uploads/2021/07/Receta-de-Galletas-de-chocolate-con-canela-500x500.jpg" alt="Galletas" width="200px" height="200px">
+        </ul>
+    </section>
+    <br>
+    <!--Formulario del cliente para hacer su pedido-->
+    <section>
+        <h3>Formulario de pedido</h3>
+        <br>    
+        <label for="nombre1">Nombre completo</label><br>
+        <input type="text" id="nombre1" name="nombre1"><br><br>
+
+        <label for="numero1">Telefono</label><br>
+        <input type="number" id="numero1" name="numero1"><br><br>
+
+        <label for="correo1">Correo electronico</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>
+    </section>
+    
+    <section>
+        <h3>Descripcion del pastel</h3>
+        <h4>Elija el o los sabores que desea</h4>
+        <input type="checkbox" id="topping1" name="topping1" value="chocolate">
+        <label for="topping1">Pastel de chocolate</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="vainilla">
+        <label for="topping2">pastel de vainilla</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="napolitano">
+        <label for="topping3">pastel de napolitano</label><br>
+        <input type="checkbox" id="topping4" name="topping4" value="fresa">
+        <label for="topping4">pastel de fresa</label><br>
+        <input type="checkbox" id="topping5" name="topping5" value="tres leches">
+        <label for="topping5">pastel tres leches</label><br>
+        <h4>Elija los adornos que desea</h4>
+        <input type="checkbox" id="topping6" name="topping6" value="chispas de chocolate">
+        <label for="topping6">chispas de chocolate</label><br>
+        <input type="checkbox" id="topping7" name="topping7" value="Gomitas">
+        <label for="topping7">Gomitas</label><br>
+        <input type="checkbox" id="topping8" name="topping8" value="Fruta">
+        <label for="topping8">Fruta</label><br>
+        <input type="checkbox" id="topping9" name="topping9" value="Helado">
+        <label for="topping9">Helado</label><br>
+        <input type="checkbox" id="topping10" name="topping10" value="Galletas">
+        <label for="topping10">Galletas</label><br>
+        <br>
+        <input type="submit"><br>
+    </section>
+    <!--Informacion hacerca de la pasteleria-->
+    <section>
+        <h3>Informacion</h3>
+        <table>
+            <tr>
+                <th>Direccion</th>
+                <th>Telefono</th>
+                <th>Horario</th>
+            </tr>
+            <tr>
+                <td><a href="https://g.page/florcatorcemx?share" target="_blank">José María Morelos 1, Zona Centro</a></td>
+                <td>22-77-98-55-43</td>
+                <td>L-S de 9:00 - 20:00</td>
+            </tr>
+        </table>
+    </section>
+      
+</body>
+</html>
+
+
+
+
+<!--Auto Gabriel Campos -Gabo-->
